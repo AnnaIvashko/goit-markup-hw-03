@@ -10,7 +10,7 @@
 *::after {
   margin: 0;
   padding: 0;
-
+}
 
 body {
   font-family: var(--main-font);
@@ -30,13 +30,65 @@ body {
   font-style: normal;
 }
 
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img {
+  display: block;
+}
+
+.is-hidden {
+  display: none;
+}
+
 /* HEADER */
+.header {
+  padding: 29px 0;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+}
+
+
+
+.navigation-list-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.navigation-list {
+  display: flex;
+}
+
+.header .address {
+  margin-left: auto;
+}
+
+.address .list:not(:last-child) {
+  margin-right: 50px;
+}
+
 .logo-link {
   font-weight: bold;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: #000000;
+}
+
+.navigation .logo-link {
+  margin-right: 90px;
 }
 
 .logo {
@@ -50,6 +102,8 @@ body {
 }
 
 .navigation-list-link {
+  padding-top: 32px;
+  padding-bottom: 32px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -76,6 +130,11 @@ body {
 }
 
 /* HERO */
+
+.hero {
+  text-align: center;
+}
+
 .hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -86,19 +145,42 @@ body {
 }
 
 .modal-btn {
+  align-items: center;
+  display: inline-block;
   font-family: var(--secondary-font);
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  display: flex;
-  align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
   color: #ffffff;
+  background-color: var(--accent-color);
+  padding: 10px 28px;
+  position: absolute;
+  width: 201px;
+  height: 50px;
+  border: 1px solid #000000;
 }
 
 /* ADVANTAGES */
+
+.advantages-list {
+  display: flex;
+}
+
+.advantages .container {
+  height: 290px;
+}
+
+.advatages-list-items {
+  width: 270px;
+}
+
+.advantages-list-item:not(:last-child) {
+  margin-right: 55px;
+}
+
 .advantages-title {
   font-weight: 700;
   font-size: 14px;
@@ -106,6 +188,8 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--main-color);
+
+  margin-top: 94px;
 }
 
 .advantages-description {
@@ -117,6 +201,20 @@ body {
 }
 
 /* DIRECTION */
+.direction .container {
+  height: 386px;
+}
+
+.direction-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.direction .title {
+  margin-top: 94px;
+  margin-bottom: 50px;
+}
+
 .title {
   font-weight: 700;
   font-size: 36px;
@@ -127,6 +225,26 @@ body {
 }
 
 /* TEAM */
+.team .title {
+  margin-top: 188px;
+  margin-bottom: 50px;
+}
+
+.team-list {
+  display: flex;
+}
+
+.team-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.team-list-item {
+  margin-bottom: 94px;
+
+  background:#ffffff
+  border-radius: 1px;
+}
+
 .team-name {
   font-weight: 500;
   font-size: 16px;
@@ -134,6 +252,9 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-color);
+
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .team-position {
@@ -146,6 +267,18 @@ body {
 }
 
 /* FOOTER */
+.footer .logo-link{
+  margin-top: 60px;
+  margin-bottom: 20px;
+  
+}
+
+.footer-list{
+  margin-top: ;
+}
+
+
+
 .footer-address {
   font-weight: 400;
   font-size: 14px;
@@ -163,6 +296,38 @@ body {
 }
 
 /* PORTFOLIO */
+.navigation-filter{
+  margin-top: 94px;
+  margin-bottom: 34px;
+}
+
+.portfolio-title {
+  display: none;
+}
+
+
+.portfolio-navigation {
+  display: flex;
+  justify-content: center;
+}
+
+.portfolio-item {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portfolio-list {
+  width: 380px;
+}
+
+.portfolio-list:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+
+.portfolio-list:nth-last-child(-n + 3) {
+  margin-bottom: 0px;
+}
+
 .filter-btn {
   font-family: var(--main-font);
   font-style: normal;
@@ -172,7 +337,12 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-color);
+
+  margin-right: 8px;
+
+  
 }
+
 
 .filter-btn:hover,
 .filter-btn:focus {
