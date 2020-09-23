@@ -132,13 +132,15 @@ img {
 /* HERO */
 
 .hero {
+  height: 600px;
   text-align: center;
-  /* background-image: url(../img/Bg.png); */
-}
+  background-image: url(../img/Bg.png);
 
+}
+/* 
 .hero .container{
    background-image: url(../img/Bg.png);
-}
+} */
 
 .hero-title {
   font-weight: 900;
@@ -147,7 +149,10 @@ img {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-}
+
+  padding-top: 200px;
+
+  }
 
 .modal-btn {
   align-items: center;
@@ -167,6 +172,7 @@ img {
   border: 1px solid #000000;
 
   margin-top: 30px;
+  margin-bottom: 200px;
 }
 
 /* ADVANTAGES */
