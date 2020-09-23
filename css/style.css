@@ -133,6 +133,11 @@ img {
 
 .hero {
   text-align: center;
+  /* background-image: url(../img/Bg.png); */
+}
+
+.hero .container{
+   background-image: url(../img/Bg.png);
 }
 
 .hero-title {
@@ -157,10 +162,11 @@ img {
   color: #ffffff;
   background-color: var(--accent-color);
   padding: 10px 28px;
-  position: absolute;
-  width: 201px;
+  width: 200px;
   height: 50px;
   border: 1px solid #000000;
+
+  margin-top: 30px;
 }
 
 /* ADVANTAGES */
@@ -268,6 +274,8 @@ img {
 
 /* FOOTER */
 .footer .logo-link{
+display: inline-block;
+
   margin-top: 60px;
   margin-bottom: 20px;
   
@@ -318,14 +326,15 @@ img {
 
 .portfolio-list {
   width: 380px;
-}
-
-.portfolio-list:not(:nth-child(3n)) {
   margin-right: 30px;
 }
 
+.portfolio-list:nth-child(3n) {
+  margin-right: 0;
+}
+
 .portfolio-list:nth-last-child(-n + 3) {
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 .filter-btn {
@@ -339,8 +348,7 @@ img {
   color: var(--main-color);
 
   margin-right: 8px;
-
-  
+ 
 }
 
 
