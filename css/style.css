@@ -279,6 +279,12 @@ img {
 }
 
 /* FOOTER */
+.footer{
+  
+background: #2F303A;;
+}
+
+
 .footer .logo-link{
 display: inline-block;
 
